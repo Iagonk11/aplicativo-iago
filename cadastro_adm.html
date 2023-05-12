@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela ADM</title>
+    <link rel="stylesheet" href="adm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="image/logo2.png">
+</head>
+
+<body>
+
+    <!--Registro-->
+
+
+    <div class="registro" id="Registro">
+        <h1><span>Tela do ADM</span></h1>
+
+        <div class="registro_main">
+
+            <form action="adm.php" method="post">
+
+                <div class="input">
+                    <p>CPF</p>
+                    <input type="text" placeholder="CPF" name="CPF">
+                </div>
+
+                <div class="input">
+                    <p>Email</p>
+                    <input type="email" placeholder="seu email" name="Email">
+                </div>
+
+                <div class="input">
+                    <p>Usuário</p>
+                    <input type="text" placeholder="seu usuário" name="Usuario">
+                </div>
+
+                <div class="input">
+                    <p>Senha</p>
+                    <input type="text" placeholder="sua senha" name="Senha">
+                </div>
+
+                <div class="input">
+                    <p>ID Usuário</p>
+                    <input type="text" placeholder="ID Usuário" name="id_cadastro">
+                </div>
+
+                <div class="input">
+                    <p>CEP</p>
+                    <input type="text" placeholder="CEP" name="CEP">
+                </div>
+
+                <div class="botao1">
+                    <input type="submit" class="excluir_btn" value="Excluir" name="Excluir">
+                </div>
+
+                <div class="botao2">
+                    <input type="submit" class="alterar_btn" value="Alterar" name="Alterar">
+                </div>
+
+                <div class="botao3">
+                    <input type="submit" class="pesquisar_btn" value="Pesquisar" name="Pesquisar">
+                </div>
+
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
