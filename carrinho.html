@@ -15,31 +15,9 @@
   </head>
   <body>
 
-    <section id="Home">
-      <nav>
-          <div class="logo">
-              <img src="image/logo.png">
-          </div>
-
-          <ul>
-              <li><a href="#Home">Inicio</a></li>
-              <li><a href="#About">Sobre nós</a></li>
-              <li><a href="#Menu">Menu</a></li>
-              <li><a href="#Registro">Registro</a></li>
-          </ul>
-
-          <div class="icon">
-
-              <i class="fa-solid fa-cart-shopping"></i>
-
-          </div>
-
-      </nav>
-    </section>
-
 
     <main>
-      <div class="page-title">CARRINHO</div>
+      <div class="page-title"> <b> CARRINHO </b> </div>
       <div class="content">
         <section>
           <table>
@@ -49,7 +27,6 @@
                 <th>Preço</th>
                 <th>Quantidade</th>
                 <th>Total</th>
-                <th>-</th>
               </tr>
             </thead>
             <tbody>
@@ -58,8 +35,8 @@
                   <div class="product">
                     <img src="image/milkshake.jpg">
                     <div class="info">
-                      <div class="name">Chocoshake - 500ml</div>
-                      <div class="category">Chocolate</div>
+                      <div class="name"><b>Chocoshake - 500ml</b></div>
+                      <div class="category"><b>Chocolate</b></div>
                     </div>
                   </div>
                 </td>
@@ -67,11 +44,11 @@
                 <td>
                   <div class="qty" >
                     <button onclick="diminuir();"><i class="bx bx-minus"></i></button>
-                    <span id="qtde">2</span>
+                    <span id="qtde"> <b>2</b> </span>
                     <button onclick="somar();"><i class="bx bx-plus"></i></button>
                   </div>
                 </td>
-                <td width="80px">R$<span id="total">26.00</span></td>
+                <td  width="80px">R$<span id="total">26.00</span></td>
                 <td>
                   <button class="remove"><i class="bx bx-x"></i></button>
                 </td>
@@ -120,5 +97,7 @@
         </aside>
       </div>
     </main>
+
+
   </body>
 </html>
