@@ -1,103 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="carrinho.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  </head>
-  <body>
+<html>
+<head>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" type="text/css" href="carrinho.css">
+  <link rel="icon" type="image/png" href="image/logo2.png">
+</head>
+<body>
+  <h1>Shopping Cart</h1>
 
+  <div id="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="cart-total">$0.00</span></p>
+    <button id="clear-cart-btn">Clear Cart</button>
+    <button id="checkout-btn">Checkout</button>
+  </div>
 
-    <main>
-      <div class="page-title"> <b> CARRINHO </b> </div>
-      <div class="content">
-        <section>
-          <table>
-            <thead>
-              <tr>
-                <th>Produto</th>
-                <th>Preço</th>
-                <th>Quantidade</th>
-                <th>Total</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <div class="product">
-                    <img src="image/milkshake.jpg">
-                    <div class="info">
-                      <div class="name"><b>Chocoshake - 500ml</b></div>
-                      <div class="category"><b>Chocolate</b></div>
-                    </div>
-                  </div>
-                </td>
-                <td >R$ <span id="precoprod">13.00</span></td>
-                <td>
-                  <div class="qty" >
-                    <button onclick="diminuir();"><i class="bx bx-minus"></i></button>
-                    <span id="qtde"> <b>2</b> </span>
-                    <button onclick="somar();"><i class="bx bx-plus"></i></button>
-                  </div>
-                </td>
-                <td  width="80px">R$<span id="total">26.00</span></td>
-                <td>
-                  <button class="remove"><i class="bx bx-x"></i></button>
-                </td>
-              </tr>
-              <script>
+  <div id="products">
+    <h2>Produtos</h2>
+    <ul>
+      <li>
+        <h2>Milkshake</h2>
+        <img src="image/milkshake.jpg"  >
+        <p>Milkshake de 500mlk</p>
+        <h2>$13.00</h2>
+        <button class="add-to-cart-btn" data-name="Product 1" data-price="10.00">Add to Cart</button>
+      </li>
+      <li>
+        <h2>Coxinha doce</h2>
+        <img src="image/coxinhamorango.png">
+        <p>$10.00</p>
+        <button class="add-to-cart-btn" data-name="Product 2" data-price="20.00">Add to Cart</button>
+      </li>
+      <li>
+        <h2>Ovo recheado</h2>
+        <img src="image/ovo_brigas.jpg">
+        <p>$32.00</p>
+        <button class="add-to-cart-btn" data-name="Product 3" data-price="30.00">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
 
-                function diminuir(){
-                  
-                  if( qtde.innerHTML > "0"){
-                    qtde.innerHTML-=1
-                    t = parseFloat(precoprod.innerHTML)*qtde.innerHTML
-                  t = t.toFixed(2)
-                  total.innerHTML=t
-                  subtotal.innerHTML=t
-                  total2.innerHTML=t}
-                }
-                
-
-                function somar(){
-                  qtde.innerHTML=parseInt(qtde.innerHTML)+1
-                  t = parseFloat(precoprod.innerHTML)*qtde.innerHTML
-                  t = t.toFixed(2)
-                  total.innerHTML=t
-                  subtotal.innerHTML=t
-                  total2.innerHTML=t
-                }
-
-
-              </script>
-            </tbody>
-          </table>
-        </section>
-        <aside>
-          <div class="box">
-            <header>Resumo da compra</header>
-            <div class="info">
-              <div><span>Sub-total</span>R$<span id="subtotal"> 26.00</span></div>
-              <div><span>Frete</span><span>Gratuito</span></div>
-            </div>
-            <footer>
-              <span>Total</span>
-              R$<span id="total2"> 26.00</span>
-            </footer>
-          </div>
-          <button>Finalizar Compra</button>
-        </aside>
-      </div>
-    </main>
-
-
-  </body>
+  <script src="carrinho.js"></script>
+</body>
 </html>
