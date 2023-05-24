@@ -1,30 +1,16 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var addToCartButtons = document.getElementsByClassName('add-to-cart-btn');
-    var cartItemsElement = document.getElementById('cart-items');
-    var cartTotalElement = document.getElementById('cart-total');
-    var clearCartButton = document.getElementById('clear-cart-btn');
-    var checkoutButton = document.getElementById('checkout-btn');
-  
-    var cartItems = [];
-    var cartTotal = 0;
-  
-    // Add event listeners to all "Add to Cart" buttons
-    for (var i = 0; i < addToCartButtons.length; i++) {
-      addToCartButtons[i].addEventListener('click', function() {
-        var name = this.getAttribute('data-name');
-        var price = parseFloat(this.getAttribute('data-price'));
-        var item = { name: name, price: price };
-  
-        cartItems.push(item);
-        cartTotal += price;
-  
-        var cartItemElement = document.createElement('li');
-        cartItemElement.textContent = name + ' - $' + price.toFixed(2);
-        cartItemsElement.appendChild(cartItemElement);
-  
-        cartTotalElement.textContent = '$' + cartTotal.toFixed(2);
-      });
-    }
-  
-    // Clear cart button event listener
-    clearCartButton.addEventListener('click'
+// Array para armazenar os itens do carrinho
+let cartItems = [];
+
+// Função para adicionar um item ao carrinho
+function addItemToCart(item) {
+    cartItems.push(item);
+    renderCartItems();
+}
+
+// Função para remover um item do carrinho
+function removeItemFromCart(index) {
+    cartItems.splice(index, 1);
+    renderCartItems();
+}
+
+// Função para calcular o preço total do carrinho
