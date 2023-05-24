@@ -17,6 +17,7 @@ header {
   border-radius: 5px;
   margin: 20px;
   padding: 20px;
+  margin-right: 650px;
 }
 
 .cart-container h2 {
@@ -24,18 +25,6 @@ header {
   margin-bottom: 10px;
 }
 
-.cart-item {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  padding: 10px;
-}
-
-.cart-item img {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
 
 .cart-item .item-info {
   flex: 1;
@@ -66,4 +55,32 @@ header {
   font-size: 20px;
   font-weight: bold;
   color: #f53d3d;
+}
+
+.produto img{
+  width: 200px;
+  height: 250px;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+}
+
+table thead tr th {
+  text-align: left;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: #000;
+  
+}
+
+
+table tbody tr:last-child {
+  border: 0;
+}
+
+table tbody tr td {
+  padding: 30px 0;
 }
