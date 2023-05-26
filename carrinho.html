@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,7 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="image/logo2.png">
 </head>
+
 
 <body>
   <main>
@@ -26,17 +29,16 @@
               <th>Preço</th>
               <th>Quantidade</th>
               <th>Total</th>
-              <th>-</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
                 <div class="product">
-                  <img src="image/milkshake.jpg">
+                  <img src="image/shakemorango.jpg">
                   <div class="info">
-                    <div class="name">Chocoshake - 500ml</div>
-                    <div class="category">Chocolate</div>
+                    <div class="name">Milkshake - 500ml</div>
+                    <div class="category">Morango</div>
                   </div>
                 </div>
               </td>
@@ -50,12 +52,14 @@
               </td>
               <td width="80px">R$<span id="total">26.00</span></td>
               <td>
-                <button class="remove"><i class="bx bx-x"></i></button>
+                <button onclick="remove()" class="remove"><i class="bx bx-x"></i></button>
               </td>
             </tr>
             <script>
 
+
               function diminuir() {
+
 
                 if (qtde.innerHTML > "0") {
                   qtde.innerHTML -= 1
@@ -68,6 +72,8 @@
               }
 
 
+
+
               function somar() {
                 qtde.innerHTML = parseInt(qtde.innerHTML) + 1
                 t = parseFloat(precoprod.innerHTML) * qtde.innerHTML
@@ -76,6 +82,8 @@
                 subtotal.innerHTML = t
                 total2.innerHTML = t
               }
+
+
 
 
             </script>
@@ -99,5 +107,6 @@
     </div>
   </main>
 </body>
+
 
 </html>
