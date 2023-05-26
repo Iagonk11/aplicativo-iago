@@ -178,8 +178,9 @@ button {
 }
 
 table {
-  width: 100%;
+  width: 70%;
   border-collapse: collapse;
+  margin-left: 87px;
 }
 
 table thead tr {
@@ -292,11 +293,12 @@ table tbody tr td {
 }
 
 .remove:hover {
-  background: #ddd;
+  background: rgb(236, 69, 69);
 }
 
 aside {
-  margin-left: 30px;
+  margin-left: 10px;
+  margin-right: 220px;
 }
 
 aside .box {
