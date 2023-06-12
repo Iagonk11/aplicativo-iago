@@ -1,73 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagamento</title>
-    <link rel="icon" type="image/png" href="image/logo2.png">
-    <link rel="stylesheet" href="pagamento.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento</title>
+  <link rel="icon" type="image/png" href="image/logo2.png">
 </head>
 <body>
-    <div class="container">
-
-        <h1>Confirme seu Pagamento</h1>
-        <div class="row-um">
-          <div class="nome-no-cartao">
-            <h3>Nome no cartão</h3>
-            <div class="caixa-de-texto">
-                <input type="text">
-            </div>
-          </div>  
-          <div class="CVV">
-            <h3>CVV</h3>
-            <div class="caixa-de-texto">
-                <input type="password">
-            </div>
-          </div>  
-        </div>
-        <div class="row-dois">
-            <div class="num-cartao">
-              <h3>Numero do cartão</h3>
-              <div class="caixa-de-texto">
-                  <input type="text">
-              </div>
-            </div>  
-          </div>
-          <div class="row-tres">
-              <h3>Validade</h3>
-              <div class="selection">
-                <div class="data">
-                    <select name="months" id="months">
-                        <option value="Jan">Jan</option>
-                        <option value="Feb">Feb</option>
-                        <option value="Mar">Mar</option>
-                        <option value="Apr">Apr</option>
-                        <option value="May">May</option>
-                        <option value="Jun">Jun</option>
-                        <option value="Jul">Jul</option>
-                        <option value="Aug">Aug</option>
-                        <option value="Sep">Sep</option>
-                        <option value="Oct">Oct</option>
-                        <option value="Nov">Nov</option>
-                        <option value="Dec">Dec</option>
-                      </select>
-                      <select name="years" id="years">
-                        <option value="2020">2020</option>
-                        <option value="2019">2019</option>
-                        <option value="2018">2018</option>
-                        <option value="2017">2017</option>
-                        <option value="2016">2016</option>
-                        <option value="2015">2015</option>
-                      </select>
-                </div>  
-                <div class="forma-pagamento">
-                    <button onclick="selecionar()" class="selecionar"><img src="image/mc.png"></button>
-                    <button onclick="selecionar()" class="selecionar"><img src="image/pix.png"></button>
-                    <button onclick="selecionar()" class="selecionar"><img src="image/vi.png"></button>
-                </div>
-              </div>
-          </div>
-    </div>
+  <div class="container">
+    <h1>Pagamento</h1>
+    <span>x</span>
+    <h1>Metodo de Pagamento</h1>
+    <form action="">
+      <label for="municipio">Cidade
+        <select name="municipio" id="municipio">
+          <option value="Joinville"></option>
+          <option value="Balneario Camboriu"></option>
+          <option value="Araquari"></option>
+          <option value="Jaragua do Sul"></option>
+          <option value="Sao Francisco do Sul"></option>
+        </select>
+      </label>
+    </form>
+  </div>
 </body>
 </html>
