@@ -2,82 +2,109 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    color: #000;
 }
 
 body{
-    width: 100%;
-    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: azure;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fac031;
 }
 
 .container{
-    width: 750px;
-    height: 500px;
-    border: 1px solid;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    justify-content:space-around;
+    width: 350px;
+    background: #fff;
+    padding: 30px;
+    position: relative;
 }
 
-.container h1{
-    text-align: center;
+h6{
+    font-size: 20px;
+    color: var(color);
 }
 
-.row-um{
-     display: flex;
-}
-
-.nome-no-cartao{
-    width: 100%;
-    margin-right: 40px;
-}
-
-.input-field{
-    border: 1px solid #999;
-}
-
-.input-field input{
-    width: 100%;
-    border:none;
-    outline: none;
-    padding: 10px;
-}
-
-.selection{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.selection select{
-    padding: 10px 20px;
-}
-
-a{
-    background-color: blueviolet;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px;
+span{
+    position: absolute;
+    right: 34px;
+    top: 28px;
     font-size: 18px;
-    transition: 0.5s;
+    color: var(color);
 }
 
-a:hover{
-    background-color: dodgerblue;
+h1{
+    padding: 30px 0px;
+    font-size: 40px;
+    color: var(color);
 }
 
-.forma-pagamento img{
-    width: 100px;
+form label{
+    color: var(color);
+    text-transform: uppercase;
+    position: relative;
+    font-size: 10px;
+    word-spacing: 4px;
 }
 
- .selecionar{
-    
- }   
+form select{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    text-transform: capitalize;
+    padding-top: 3px;
+    color: var(color);
+    padding-bottom: 3px;
+    font-size: 18px;
+    margin-left: -3px;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+form #cardnum {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    padding-right: 30px;
+    color: var(color);
+    font-size: 18px;
+    background-color: transparent;
+    padding-bottom: 5px;
+}
+
+.float{
+    display: flex;
+}
+
+#validade , #cvv{
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    width: 130px;
+    padding-top: 14px;
+    margin-bottom: 56px;
+    color: var(color);
+    background-color: transparent;
+    font-size: 18px;
+}
+
+p{
+    margin: -20px 0px 56px 25px;
+    font-size: 16px;
+    text-transform: none;
+}
+
+button{
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background: #fac031;
+}

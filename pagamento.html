@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pagamento</title>
   <link rel="icon" type="image/png" href="image/logo2.png">
+  <link rel="stylesheet" href="pagamento.css">
 </head>
 
 <body>
@@ -25,15 +26,24 @@
         </select>
       </label>
       <label for="cardnum">Número do Cartão
-        <input type="text" name="cardnum" id="cardnum" maxlength="19" onkeypress="cardspace" />
+        <input type="text" name="cardnum" id="cardnum" maxlength="19" onkeypress="cardspace()" />
       </label>
       <div class="float">
         <label for="validade">Validade
-          <input type="text" name="" id="">
+          <input type="text" name="validade" id="validade" maxlength="7" onkeypress="addSlashes()">
+        </label>
+        <label for="cvv">CVV
+          <input type="text" name="cvv" id="cvv" maxlength="3"/>
         </label>
       </div>
+        <label for="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+        </label>
+        <button>R$13.00</button>
+      
     </form>
   </div>
+  <script src=""></script>
 </body>
 
 </html>
