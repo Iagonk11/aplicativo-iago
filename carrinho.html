@@ -19,7 +19,7 @@
 
 <body>
   <main>
-    <div class="page-title">CARRINHO</div>
+    <div class="page-title">  <a href="milkshake.html"><img class="logou" src="image/volta.png"></a> CARRINHO</div>
     <div class="content">
       <section>
         <table>
@@ -46,17 +46,17 @@
               <td>
                 <div class="qty">
                   <button onclick="diminuir();"><i class="bx bx-minus"></i></button>
-                  <span id="qtde">2</span>
+                  <span id="qtde">1</span>
                   <button onclick="somar();"><i class="bx bx-plus"></i></button>
                 </div>
               </td>
-              <td width="80px">R$<span id="total">26.00</span></td>
+              <td width="80px">R$<span id="total">13.00</span></td>
               <td>
                 <button onclick="remove()" class="remove"><i class="bx bx-x"></i></button>
               </td>
             </tr>
             <script>
-              function remove() {
+              function remove(){
                 document.getElementById('produto1').style.display = "none";
               }
 
@@ -96,12 +96,12 @@
         <div class="box">
           <header>Resumo da compra</header>
           <div class="info">
-            <div><span>Sub-total</span>R$<span id="subtotal"> 26.00</span></div>
+            <div><span>Sub-total</span>R$<span id="subtotal"> 13.00</span></div>
             <div><span>Frete</span><span>Gratuito</span></div>
           </div>
           <footer>
             <span>Total</span>
-            R$<span id="total2"> 26.00</span>
+            R$<span id="total2"> 13.00</span>
           </footer>
         </div>
         <button>Finalizar Compra</button>
