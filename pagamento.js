@@ -13,3 +13,7 @@ function addSlashes(){
         document.getElementById('validade').max = 1;
     }
 }
+
+function remove(){
+    document.getElementById('container').style.display = "none";
+  }

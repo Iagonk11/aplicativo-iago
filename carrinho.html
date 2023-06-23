@@ -32,9 +32,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr id="tr">
               <td>
-                <div class="product">
+                <div class="product" id="product">
                   <img src="image/shakemorango.jpg">
                   <div class="info">
                     <div class="name">Milkshake - 500ml</div>
@@ -51,6 +51,29 @@
                 </div>
               </td>
               <td width="80px">R$<span id="total">26.00</span></td>
+              <td>
+                <button onclick="remove()" class="remove"><i class="bx bx-x"></i></button>
+              </td>
+            </tr>
+            <tr id="tr2">
+              <td>
+                <div class="product" id="product2">
+                  <img src="image/shakemorango.jpg">
+                  <div class="info">
+                    <div class="name">Milkshake - 500ml</div>
+                    <div class="category">Morango</div>
+                  </div>
+                </div>
+              </td>
+              <td>R$ <span id="precoprod2">13.00</span></td>
+              <td>
+                <div class="qty">
+                  <button onclick="diminuir2();"><i class="bx bx-minus"></i></button>
+                  <span id="qtde2">2</span>
+                  <button onclick="somar2();"><i class="bx bx-plus"></i></button>
+                </div>
+              </td>
+              <td width="80px">R$<span id="total3">26.00</span></td>
               <td>
                 <button onclick="remove()" class="remove"><i class="bx bx-x"></i></button>
               </td>
@@ -84,9 +107,42 @@
               }
 
               function remove(){
-                
+                document.getElementById('tr').style.display = "none";
+                document.getElementById('tr2').style.display = "none";
+
               }
 
+              function somar2() {
+                qtde2.innerHTML = parseInt(qtde2.innerHTML) + 1
+                t = parseFloat(precoprod2.innerHTML) * qtde2.innerHTML
+                t = t.toFixed(2)
+                total.innerHTML = t
+                subtotal.innerHTML = t
+                total2.innerHTML = t
+              }
+
+              function diminuir2() {
+                if (qtde2.innerHTML > "0") {
+                qtde2.innerHTML -= 1
+                t = parseFloat(precoprod2.innerHTML) * qtde2.innerHTML
+                t = t.toFixed(2)
+                total.innerHTML = t
+               subtotal.innerHTML = t
+                total2.innerHTML = t
+              }
+              }
+
+              function remove(){
+                document.getElementById('tr2').style.display = "none";
+                if (qtde2.innerHTML > "0") {
+                qtde2.innerHTML -= 1
+                t = parseFloat(precoprod2.innerHTML) * qtde2.innerHTML
+                t = t.toFixed(2)
+                total.innerHTML = t
+               subtotal.innerHTML = t
+                total2.innerHTML = t
+              }
+              }
 
             </script>
           </tbody>

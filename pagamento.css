@@ -34,6 +34,7 @@ span{
     top: 28px;
     font-size: 18px;
     color: var(color);
+    cursor: pointer ;
 }
 
 h1{
