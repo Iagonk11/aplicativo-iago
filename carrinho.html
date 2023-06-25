@@ -75,7 +75,7 @@
               </td>
               <td width="80px">R$<span id="total3">26.00</span></td>
               <td>
-                <button onclick="remove()" class="remove"><i class="bx bx-x"></i></button>
+                <button onclick="remove2()" class="remove"><i class="bx bx-x"></i></button>
               </td>
             </tr>
             <script>
@@ -108,7 +108,14 @@
 
               function remove(){
                 document.getElementById('tr').style.display = "none";
-                document.getElementById('tr2').style.display = "none";
+                if (qtde.innerHTML > "0") {
+                qtde.innerHTML -= 1
+                t = parseFloat(precoprod.innerHTML) * qtde.innerHTML
+                t = t.toFixed(2)
+                total.innerHTML = t
+               subtotal.innerHTML = t
+                total2.innerHTML = t
+                }
 
               }
 
@@ -132,7 +139,7 @@
               }
               }
 
-              function remove(){
+              function remove2(){
                 document.getElementById('tr2').style.display = "none";
                 if (qtde2.innerHTML > "0") {
                 qtde2.innerHTML -= 1
