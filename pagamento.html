@@ -13,7 +13,7 @@
 <body>
   <div class="container" id="container">
     <h1>Pagamento</h1>
-    <span onclick="remove()" id="remove">x</span>
+
     <h1>Metodo de Pagamento</h1>
     <form action="">
       <label for="municipio">Cidade
@@ -34,15 +34,15 @@
           <input type="text" name="validade" id="validade" maxlength="7" onkeypress="addSlashes()">
         </label>
         <label for="cvv">CVV
-          <input type="text" name="cvv" id="cvv" maxlength="3"/>
+          <input type="text" name="cvv" id="cvv" maxlength="3" />
         </label>
       </div>
-        <label for="checkbox">
-          <input type="checkbox" name="checkbox" id="checkbox">
-          <p>Concordo com os termos de condições de privacidade.</p>
-        </label>
-        <button>R$13.00</button>
-      
+      <label for="checkbox">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <p>Concordo com os termos de condições de privacidade.</p>
+      </label>
+      <a href="Obrigado.html" class="menu_btn">R$13.00</a>
+
     </form>
   </div>
   <script src="pagamento.js"></script>

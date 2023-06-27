@@ -111,5 +111,23 @@ button{
     color: var(color);
     padding: 10px;
     font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+
 }
 
+.menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(color);
+    background: #fac031;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.7s;
+}
+
+.menu_btn:hover{
+    border-radius: 10px;
+}
